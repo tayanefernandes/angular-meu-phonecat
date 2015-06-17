@@ -1,25 +1,29 @@
 <div class="container-fluid">
   <div class="row">
-    <div class="col-md-2">
+    <div class="filter">
       <!--Sidebar content-->
 
-      Search: <input ng-model="query">
-      Sort by:
+      <label for="search">Search:</label>
+      <input id="search" ng-model="query">
+
+      <label for="order">Sort by:</label>
       <select ng-model="orderProp">
         <option value="name">Alphabetical</option>
         <option value="age">Newest</option>
       </select>
 
     </div>
-    <div class="col-md-10">
+    <div class="container-phones">
       <!--Body content-->
 
       <ul class="phones">
         <li ng-repeat="phone in phones | filter:query | orderBy:orderProp"
             class="thumbnail phone-listing">
           <a href="#/phones/{{phone.id}}" class="thumb"><img ng-src="{{phone.imageUrl}}"></a>
-          <a href="#/phones/{{phone.id}}">{{phone.name}}</a>
-          <p>{{phone.snippet}}</p>
+          <div class="description"> 
+            <a href="#/phones/{{phone.id}}">{{phone.name}}</a>
+            <p>{{phone.snippet}}</p>
+          </div>          
         </li>
       </ul>
 

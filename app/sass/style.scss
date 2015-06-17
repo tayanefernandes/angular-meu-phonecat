@@ -1,0 +1,138 @@
+@import "colors";
+
+body {
+	background: $light-blue;
+}
+
+ul {
+	padding: 0;
+	overflow: hidden;
+}
+
+p {
+	margin: 0;
+	color: $dark-gray2;
+}
+
+.container-fluid {
+	width: 80%;
+	margin: 0 auto;
+
+	.container-phones {
+		width: 100%;
+		overflow: hidden;
+		padding-top: 1em;
+	}
+}
+
+.filter {
+	background: $dark-gray;
+	padding: 0.8em;
+
+	input, select {
+		width: 20%;
+	}
+
+	label {
+		color: white;
+		padding: 0 0.6em;
+	}
+}
+
+
+.phones {
+	li {
+		width: 31%;
+		display: inline-block;
+		vertical-align: top;
+		box-shadow: 3px 3px 20px $shadow-gray;
+		margin: 0.5em 0.8em 1.5em 0.8em;
+	}
+
+	.description {
+		color: $dark-gray2	;
+		background: $gray;
+		padding: 1em;
+		border-top: solid 1px $light-gray;
+		font-size: 0.9em;
+
+
+		a {
+			color: $light-green;
+			font-weight: bold;
+			font-size: 1.2em;
+			padding-bottom: 1em;
+		}
+	}
+
+	img {
+		padding: 1em;
+	}
+}
+
+.thumbnail {
+	padding: 0;
+}
+
+.container-detail {
+	padding: 0 2em 2em 2em;
+	overflow: hidden;
+
+
+	.phone-images {
+		border: solid 1px $light-gray;
+		box-shadow: 3px 3px 20px $shadow-gray;
+		margin: 1em;
+	}
+
+	.phone-description {
+		h1 {
+			color: $light-green;
+		}
+
+		.phone-thumbs {
+			li {
+			  border: 1px solid $dark-gray2;
+			  display: inline-block;
+			  margin: 1em;
+			  background-color: white;
+			}
+		}
+
+	}
+
+	.specs {
+		clear: both;
+		padding-left: 2em;
+		list-style: square;
+
+		li {
+			border-bottom: 1px solid $dark-gray;
+			padding: 1em 0;
+			overflow: hidden;
+
+			span{
+			  font-weight: bold;
+			  color: $dark-gray2;
+			  font-size: 1.2em;
+			  clear: both;
+			}
+		}
+
+		dt {
+		  font-weight: bold;
+		  clear: left;
+		  float: left;
+		  margin-right: 1em;
+
+		  &:after {
+		  	content: ":";
+		  }
+		}
+
+		dl {
+			margin: 0;
+		}
+
+	}
+}

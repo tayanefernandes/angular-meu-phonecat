@@ -1,0 +1,89 @@
+body {
+  background: #EFF3F8; }
+
+ul {
+  padding: 0;
+  overflow: hidden; }
+
+p {
+  margin: 0;
+  color: #727272; }
+
+.container-fluid {
+  width: 80%;
+  margin: 0 auto; }
+  .container-fluid .container-phones {
+    width: 100%;
+    overflow: hidden;
+    padding-top: 1em; }
+
+.filter {
+  background: #444D57;
+  padding: 0.8em; }
+  .filter input, .filter select {
+    width: 20%; }
+  .filter label {
+    color: white;
+    padding: 0 0.6em; }
+
+.phones li {
+  width: 31%;
+  display: inline-block;
+  vertical-align: top;
+  box-shadow: 3px 3px 20px #C1C5C8;
+  margin: 0.5em 0.8em 1.5em 0.8em; }
+.phones .description {
+  color: #727272;
+  background: #f7f7f7;
+  padding: 1em;
+  border-top: solid 1px #f1f1f1;
+  font-size: 0.9em; }
+  .phones .description a {
+    color: #44B6AE;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding-bottom: 1em; }
+.phones img {
+  padding: 1em; }
+
+.thumbnail {
+  padding: 0; }
+
+.container-detail {
+  padding: 0 2em 2em 2em;
+  overflow: hidden; }
+  .container-detail .phone-images {
+    border: solid 1px #f1f1f1;
+    box-shadow: 3px 3px 20px #C1C5C8;
+    margin: 1em; }
+  .container-detail .phone-description h1 {
+    color: #44B6AE; }
+  .container-detail .phone-description .phone-thumbs li {
+    border: 1px solid #727272;
+    display: inline-block;
+    margin: 1em;
+    background-color: white; }
+  .container-detail .specs {
+    clear: both;
+    padding-left: 2em;
+    list-style: square; }
+    .container-detail .specs li {
+      border-bottom: 1px solid #444D57;
+      padding: 1em 0;
+      overflow: hidden; }
+      .container-detail .specs li span {
+        font-weight: bold;
+        color: #727272;
+        font-size: 1.2em;
+        clear: both; }
+    .container-detail .specs dt {
+      font-weight: bold;
+      clear: left;
+      float: left;
+      margin-right: 1em; }
+      .container-detail .specs dt:after {
+        content: ":"; }
+    .container-detail .specs dl {
+      margin: 0; }
+
+/*# sourceMappingURL=style.css.map */
