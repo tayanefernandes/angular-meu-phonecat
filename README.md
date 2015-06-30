@@ -247,6 +247,9 @@ Requires a webserver that serves the application. See Running the app during dev
 
 For more information on AngularJS please check out http://angularjs.org/
 
+##This version has a layout using sass
+http://sass-lang.com/
+
 [7 Zip]: http://www.7-zip.org/
 [angular-seed]: https://github.com/angular/angular-seed
 [DI]: http://docs.angularjs.org/guide/di
